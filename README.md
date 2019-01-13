@@ -1,2 +1,3 @@
 # gPecker
-gPecker is a Gcode based CNC Controller..
+gPecker stands for Green WoodPecker,
+It is a STM32F103 Gcode based CNC Controller..
