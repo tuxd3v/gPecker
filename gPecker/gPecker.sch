@@ -224,21 +224,12 @@ L Device:R R10
 U 1 1 5C3BF40E
 P 2050 1200
 F 0 "R10" H 1980 1154 50  0000 R CNN
-F 1 "4.7k,0603" H 1980 1245 50  0000 R CNN
+F 1 "1.5k,0603" H 1980 1245 50  0000 R CNN
 F 2 "" V 1980 1200 50  0001 C CNN
 F 3 "~" H 2050 1200 50  0001 C CNN
 	1    2050 1200
 	-1   0    0    1   
 $EndComp
-Wire Wire Line
-	1300 1700 1300 1950
-Wire Wire Line
-	1300 1950 1000 1950
-Connection ~ 1000 1950
-Wire Wire Line
-	1300 1600 1450 1600
-Wire Wire Line
-	1450 1500 1300 1500
 Text GLabel 2450 1500 2    50   Input ~ 0
 PA12
 Text GLabel 2450 1600 2    50   Input ~ 0
@@ -456,23 +447,12 @@ Connection ~ 4400 2850
 Wire Wire Line
 	4400 2850 4400 2950
 Wire Wire Line
-	1300 1300 1450 1300
-Wire Wire Line
-	1450 800  1450 1000
-Wire Wire Line
 	1750 1500 2050 1500
 Wire Wire Line
 	2050 1500 2050 1350
 Connection ~ 2050 1500
 Wire Wire Line
 	2050 1500 2450 1500
-Wire Wire Line
-	2050 1050 2050 1000
-Wire Wire Line
-	2050 1000 1450 1000
-Connection ~ 1450 1000
-Wire Wire Line
-	1450 1000 1450 1300
 $Comp
 L Device:C C2
 U 1 1 5C3FC545
@@ -500,4 +480,33 @@ Wire Wire Line
 Connection ~ 1100 5400
 Wire Wire Line
 	1100 5400 1100 5450
+Text GLabel 7950 2700 0    50   Input ~ 0
+BOOT0
+Text GLabel 7950 4700 0    50   Input ~ 0
+BOOT1
+Wire Wire Line
+	8150 2700 7950 2700
+Wire Wire Line
+	8150 4700 7950 4700
+Wire Wire Line
+	1450 800  1450 1300
+$Comp
+L power:+3.3V #PWR?
+U 1 1 5C3D201E
+P 2050 800
+F 0 "#PWR?" H 2050 650 50  0001 C CNN
+F 1 "+3.3V" H 2065 973 50  0000 C CNN
+F 2 "" H 2050 800 50  0001 C CNN
+F 3 "" H 2050 800 50  0001 C CNN
+	1    2050 800 
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2050 1050 2050 800 
+Wire Wire Line
+	1300 1600 1450 1600
+Wire Wire Line
+	1300 1500 1450 1500
+Wire Wire Line
+	1300 1300 1450 1300
 $EndSCHEMATC
