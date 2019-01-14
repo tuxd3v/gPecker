@@ -180,12 +180,12 @@ $EndComp
 $Comp
 L Connector:USB_B_Mini J1
 U 1 1 5C3BE3F5
-P 1000 1500
-F 0 "J1" H 1055 1967 50  0000 C CNN
-F 1 "USB_B_Mini" H 1055 1876 50  0000 C CNN
-F 2 "" H 1150 1450 50  0001 C CNN
-F 3 "~" H 1150 1450 50  0001 C CNN
-	1    1000 1500
+P 950 1500
+F 0 "J1" H 1005 1967 50  0000 C CNN
+F 1 "USB_B_Mini" H 1005 1876 50  0000 C CNN
+F 2 "" H 1100 1450 50  0001 C CNN
+F 3 "~" H 1100 1450 50  0001 C CNN
+	1    950  1500
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -230,15 +230,6 @@ F 3 "~" H 2050 1200 50  0001 C CNN
 	1    2050 1200
 	-1   0    0    1   
 $EndComp
-Wire Wire Line
-	1300 1700 1300 1950
-Wire Wire Line
-	1300 1950 1000 1950
-Connection ~ 1000 1950
-Wire Wire Line
-	1300 1600 1450 1600
-Wire Wire Line
-	1450 1500 1300 1500
 Text GLabel 2450 1500 2    50   Input ~ 0
 PA12
 Text GLabel 2450 1600 2    50   Input ~ 0
@@ -456,8 +447,6 @@ Connection ~ 4400 2850
 Wire Wire Line
 	4400 2850 4400 2950
 Wire Wire Line
-	1300 1300 1450 1300
-Wire Wire Line
 	1750 1500 2050 1500
 Wire Wire Line
 	2050 1500 2050 1350
@@ -514,4 +503,10 @@ F 3 "" H 2050 800 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	2050 1050 2050 800 
+Wire Wire Line
+	1300 1600 1450 1600
+Wire Wire Line
+	1300 1500 1450 1500
+Wire Wire Line
+	1300 1300 1450 1300
 $EndSCHEMATC
