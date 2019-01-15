@@ -666,4 +666,8 @@ Text GLabel 8900 4950 2    50   Input ~ 0
 SWDIO
 Wire Wire Line
 	8900 4950 8550 4950
+Text GLabel 8850 5050 2    50   Input ~ 0
+SWDCLK
+Wire Wire Line
+	8850 5050 8550 5050
 $EndSCHEMATC

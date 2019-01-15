@@ -579,7 +579,7 @@ Wire Wire Line
 Wire Wire Line
 	3600 4850 3500 4850
 Text GLabel 2500 4850 0    50   Input ~ 0
-BOOT00
+BOOT0
 Text GLabel 4050 4850 2    50   Input ~ 0
 BOOT1
 Wire Wire Line
